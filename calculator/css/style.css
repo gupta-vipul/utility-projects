@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgoldenrodyellow
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.calculator-box {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(253, 253, 153);
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.158);
+}
+
+.display {
+    height: 100px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.display input {
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    border-radius: 10px;
+}
