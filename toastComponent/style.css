@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.toastGeneratorBox {
+    display: flex;
+    box-shadow: 1px 1px 20px 7px rgb(0, 0, 0,0.2);
+    padding: 1rem 2rem;
+    width: 30rem;
+    border-radius: 10px;
+    gap: 2rem;
+    background-color: whitesmoke;
+}
+
+.toastSetting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#addToast {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#removeAllToast {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+#toastContainer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.toast {
+    width: 250px;
+    height: 60px;
+    color: white;
+    padding: .25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.successToast {
+    background-color: green;
+}
+.errorToast {
+    background-color: red;
+}
+
+.closeToastBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: white;
+    padding-right: 10px;
+}

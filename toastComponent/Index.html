@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Component</title>
+    <link rel="stylesheet" href="/LearningJS/toastComponent/style.css">
+    <script src="/LearningJS/toastComponent/script.js" defer></script>
+</head>
+<body>
+    <section class="toastGeneratorBox">
+        <textarea name="toastMessage" id="toastMessage" cols="30" rows="10">Toast Message</textarea>
+        <div class="toastSetting">
+            <div>
+                <label for="toast-duration">Duration</label>
+                <input type="text" name="toast-duration" id="toast-duration" value="3000">
+            </div>
+            <div>
+                <label for="isCancellable">Cancellable</label>
+                <input type="checkbox" name="isCancellable" id="isCancellable">
+            </div>
+            <div>
+                <label for="success">Success</label>
+                <input type="radio" name="toast-type" id="success" value="success">
+                <label for="error">Error</label>
+                <input type="radio" name="toast-type" id="error" value="error">
+            </div>
+            <button id="addToast">Add Toast</button>
+            <button id="removeAllToast">Remove All Toast</button>
+        </div>
+    </section>
+
+    <div id="toastContainer">
+        <!-- <div class="toast successToast">
+            <p>Lorem ipsum dolor sit.</p>
+            <span class="closeToastBtn">x</span>
+        </div> -->
+        
+    </div>
+
+</body>
+</html>
